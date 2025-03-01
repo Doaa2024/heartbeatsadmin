@@ -110,7 +110,34 @@
       <div class="sidebar-logo">
         <!-- Logo Header -->
         <div class="logo-header" style="background-color:#48abf7">
-    <a href="https://heartbeatsadmin.vercel.app/Doctor/tables/dashboard.html" class="collapsed" aria-expanded="false">
+   <a href="https://heartbeatsadmin.vercel.app/Doctor/tables/dashboard.html" class="logo fs-5 fw-bold d-flex align-items-center justify-content-center" style="color:white; text-align:center;">
+            <img
+              src="image_no_background.png"
+              alt="navbar brand"
+              class="navbar-brand mx-3"
+              style="max-height: 90%; width: 90%; object-fit: contain;" /> <!-- Prevent stretching of the image -->
+
+            <span style="font-weight: bold; color: white; font-size:1.3rem; line-height:0; margin:0;">HeartBeat</span> <!-- Make the text bold and orange -->
+          </a>
+          <div class="nav-toggle">
+            <button class="btn btn-toggle toggle-sidebar">
+              <i class="gg-menu-right"></i>
+            </button>
+            <button class="btn btn-toggle sidenav-toggler">
+              <i class="gg-menu-left"></i>
+            </button>
+          </div>
+          <button class="topbar-toggler more">
+            <i class="gg-more-vertical-alt"></i>
+          </button>
+        </div>
+        <!-- End Logo Header -->
+      </div>
+      <div class="sidebar-wrapper scrollbar scrollbar-inner">
+        <div class="sidebar-content">
+          <ul class="nav nav-secondary">
+            <li class="nav-item <?html echo (basename($_SERVER['PHP_SELF']) == 'dashboard.html') ? 'active' : ''; ?>">
+              <a href="https://heartbeatsadmin.vercel.app/Doctor/tables/dashboard.html" class="collapsed" aria-expanded="false">
                 <i class="fas fa-home"></i>
                 <p>Dashboard</p>
               </a>
