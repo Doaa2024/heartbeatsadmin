@@ -202,9 +202,9 @@ button:hover {
 
             // Redirect based on user role
             if (data.role === 'admin' || data.role === 'secretary') {
-                window.location.href = 'dashboard.php';
+                window.location.href = 'dashboard.html';
             } else if (data.role === 'doctor') {
-                window.location.href = '../../Doctor/tables/dashboard.php';
+                window.location.href = '../../Doctor/tables/dashboard.html';
             } else {
                 throw new Error('Unauthorized role');
             }
